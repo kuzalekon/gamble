@@ -3,7 +3,6 @@
 <hr>
 <p align="center">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT">
-    <img src="https://img.shields.io/badge/size-942B-brightgreen.svg" alt="942B">
     <img src="https://img.shields.io/badge/chrome-%3E%3D%204-blue.svg" alt="Chrome">
     <img src="https://img.shields.io/badge/firefox-%3E%3D%203.5-blue.svg" alt="FireFox">
     <img src="https://img.shields.io/badge/opera-%3E%3D%2015-blue.svg" alt="Opera">
