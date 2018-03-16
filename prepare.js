@@ -18,9 +18,9 @@
     }
     // Global context
     else {
-        var defs = definition();
-        for (var def in defs)
-            context[def] = defs[def];
+        var fns = definition();
+        for (var fn in fns)
+            context[fn] = fns[fn];
     }
 
 }(this, function () {
