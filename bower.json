@@ -1,0 +1,17 @@
+{
+  "name": "preparejs",
+  "description": "Small library for dynamically add a resource-hints in your web pages",
+  "main": "prepare.js",
+  "browser": "prepare.js",
+  "authors": [
+    "Kuznetsov Aleksey"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "resource",
+    "resources",
+    "hints",
+    "assets"
+  ],
+  "homepage": "https://github.com/kalexey89/preparejs"
+}
