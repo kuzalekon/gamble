@@ -1,6 +1,6 @@
 {
   "name": "preparejs",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Small library for dynamically add a resource-hints in your web pages",
   "main": "prepare.js",
   "browser": "prepare.js",

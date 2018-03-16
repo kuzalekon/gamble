@@ -1,6 +1,6 @@
 /**
  * @file Small library for dynamically add a resource-hints in your web pages
- * @version 0.0.1
+ * @version 1.0.0
  * @author Kuznetsov Aleksey <kyznecov.alexey@gmail.com>
  * @license MIT
  */
