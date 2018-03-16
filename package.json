@@ -1,0 +1,29 @@
+{
+  "name": "preparejs",
+  "version": "0.0.1",
+  "description": "Small library for dynamically add a resource-hints in your web pages",
+  "main": "prepare.js",
+  "browser": "prepare.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalexey89/preparejs.git"
+  },
+  "keywords": [
+    "resource",
+    "resources",
+    "hints",
+    "assets"
+  ],
+  "author": {
+    "name": "Kuznetsov Aleksey",
+    "email": "kyznecov.alexey@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalexey89/preparejs/issues"
+  },
+  "homepage": "https://github.com/kalexey89/preparejs#readme"
+}
