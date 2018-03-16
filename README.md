@@ -22,6 +22,17 @@ Note: "preparejs" is **designed as UMD** module.
 ### Usage
 
 ```js
+// loading with RequireJS
+require(['preparejs'], function(pjs) { 
+    pjs.preresolve('https://cdn-domain.com');
+});
+// loading with CommonJS
+var pjs = require('preparejs');
+pjs.preresolve('https://cdn-domain.com');
+// loading in browser
+<script type="applciation/javascript" src="prepare.min.js"></script>
+preresolve('https://cdn-domain.com');
+
 // prefetch DNS of one or many hosts
 prepare('dns-prefetch', 'https://domain.com');
 prepare('dns-prefetch', ['https://domain1.com', 'https://domain2.com']);
