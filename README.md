@@ -30,7 +30,7 @@ require(['preparejs'], function(pjs) {
 var pjs = require('preparejs');
 pjs.preresolve('https://cdn-domain.com');
 // loading in browser
-<script type="applciation/javascript" src="prepare.min.js"></script>
+<script type="application/javascript" src="prepare.min.js"></script>
 preresolve('https://cdn-domain.com');
 
 // prefetch DNS of one or many hosts
