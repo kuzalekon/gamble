@@ -5,7 +5,7 @@
   "main": "prepare.js",
   "browser": "prepare.js",
   "scripts": {
-    "compile": "uglifyjs -c -mt -o prepare.min.js prepare.js"
+    "uglify": "uglifyjs -c -mt -o prepare.min.js prepare.js"
   },
   "repository": {
     "type": "git",

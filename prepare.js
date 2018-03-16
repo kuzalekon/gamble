@@ -4,13 +4,13 @@
  * @author Kuznetsov Aleksey <kyznecov.alexey@gmail.com>
  * @license MIT
  */
-(function (context, definition) {
+(function (name, context, definition) {
 
     'use strict';
 
     // RequireJS and other-like
     if (typeof define === 'function' && define.amd) {
-        define(definition);
+        define(name, definition);
     }
     // CommonJS and other-like
     else if (typeof module === 'object' && module.exports) {
@@ -18,12 +18,10 @@
     }
     // Global context
     else {
-        var fns = definition();
-        for (var fn in fns)
-            context[fn] = fns[fn];
+        context[name] = definition();
     }
 
-}(this, function () {
+}('preparejs', this, function () {
 
     'use strict';
 
