@@ -71,7 +71,7 @@
          * Alias for {@link prepare}('dns-prefetch', ...)
          *
          * @public
-         * @function predns
+         * @function preresolve
          * @param {string|array} url Value of <i>href</i> attribute
          * @param {object} attrs Additional attributes
          */
