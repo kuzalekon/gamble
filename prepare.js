@@ -1,6 +1,6 @@
 /**
  * @file Small library for dynamically add a resource-hints in your web pages
- * @version 1.0.0.1
+ * @version 0.0.1
  * @author Kuznetsov Aleksey <kyznecov.alexey@gmail.com>
  * @license MIT
  */
@@ -46,6 +46,9 @@
             link.href = url;
             for (var attr in attrs)
                 link[attr] = attrs[attr];
+
+            link.onload = function (event) { document.head.removeChild(event.target); }
+            link.onerror = function (event) { document.head.removeChild(event.target); }
 
             document.head.appendChild(link);
         });
