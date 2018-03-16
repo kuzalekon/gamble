@@ -1,5 +1,5 @@
 <p align="center"><img src="prepare.png" alt="prepare.js" /></p>
-<p align="center">Small library for dynamically add a resource-hints in your web pages</p>
+<p align="center">A small and simply library for dynamically add a resource-hints in your web pages</p>
 <hr>
 <p align="center">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="MIT">
