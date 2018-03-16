@@ -75,7 +75,7 @@
          * @param {string|array} url Value of <i>href</i> attribute
          * @param {object} attrs Additional attributes
          */
-        predns: prepare.bind(null, 'dns-prefetch'),
+        preresolve: prepare.bind(null, 'dns-prefetch'),
 
         /**
          * Alias for {@link prepare}('preconnect', ...)
