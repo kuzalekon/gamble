@@ -21,8 +21,27 @@
 
 }('gamble', this, function () {
 
-    return function gamble(options) {
+    /**
+     * Creates a link tag with the specified attributes
+     *
+     * @param {object} attributes The attributes of the link tag
+     */
+    return function gamble(attributes) {
+        if (!attributes || typeof attributes !== 'object')
+            throw new TypeError('argument \"attributes\" must be a object');
 
+        if (!attributes.rel)
+            throw new TypeError('attribute \"rel\" is required');
+
+        if (!attributes.href)
+            throw new TypeError('attribute \"href\" is required');
+
+        var link = document.createElement('link');
+        for (var attr in attributes) link[attr] = attributes[attr];
+        link.onload = function (e) { document.head.removeChild(e.target); }
+        link.onerror = function (e) { document.head.removeChild(e.target); }
+
+        document.head.appendChild(link);
     }
 
 }));
