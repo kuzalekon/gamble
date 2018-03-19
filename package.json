@@ -1,15 +1,15 @@
 {
-  "name": "preparejs",
+  "name": "gamble",
   "version": "1.0.3",
   "description": "Small library for dynamically add a resource-hints in your web pages",
-  "main": "prepare.js",
-  "browser": "prepare.js",
+  "main": "gamble.js",
+  "browser": "gamble.min.js",
   "scripts": {
-    "uglify": "uglifyjs -c -mt -o prepare.min.js prepare.js"
+    "compress": "uglifyjs -c -mt -o gamble.min.js gamble.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kalexey89/preparejs.git"
+    "url": "git+https://github.com/kalexey89/gamble.git"
   },
   "keywords": [
     "resource",
@@ -23,9 +23,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kalexey89/preparejs/issues"
+    "url": "https://github.com/kalexey89/gamble/issues"
   },
-  "homepage": "https://github.com/kalexey89/preparejs#readme",
+  "homepage": "https://github.com/kalexey89/gamble#readme",
   "devDependencies": {
     "uglify-js": "^3.3.15"
   }
