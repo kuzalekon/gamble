@@ -1,7 +1,7 @@
 {
   "name": "gamble",
   "version": "1.0.3",
-  "description": "Small library for dynamically add a resource-hints in your web pages",
+  "description": "A small and simply library for dynamically add a resource-hints in your web pages",
   "main": "gamble.js",
   "browser": "gamble.min.js",
   "scripts": {

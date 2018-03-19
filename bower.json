@@ -1,8 +1,8 @@
 {
-  "name": "preparejs",
-  "description": "Small library for dynamically add a resource-hints in your web pages",
-  "main": "prepare.js",
-  "browser": "prepare.js",
+  "name": "gamble",
+  "description": "A small and simply library for dynamically add a resource-hints in your web pages",
+  "main": "gamble.js",
+  "browser": "bamble.min.js",
   "authors": [
     "Kuznetsov Aleksey"
   ],
@@ -13,5 +13,5 @@
     "hints",
     "assets"
   ],
-  "homepage": "https://github.com/kalexey89/preparejs"
+  "homepage": "https://github.com/kalexey89/gamble"
 }
