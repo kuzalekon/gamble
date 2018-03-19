@@ -10,8 +10,16 @@
   "keywords": [
     "resource",
     "resources",
+    "hint",
     "hints",
-    "assets"
+    "asset",
+    "assets",
+    "dns-prefetch",
+    "preconnect",
+    "prefetch",
+    "preload",
+    "prerender",
+    "speculate"
   ],
   "homepage": "https://github.com/kalexey89/gamble"
 }
