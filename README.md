@@ -12,65 +12,40 @@
 </p>
 
 ### Installation
-You can install "preparejs" using npm, yarn or bower:
+You can install `gamble` using npm, yarn or bower:
 ```
-$ npm install preparejs
-$ yarn add preparejs
-$ bower install preparejs
+$ npm install gamble
+$ yarn add gamble
+$ bower install gamble
 ```
 ### Usage
 
-The library is exports as **UMD module**
+Note: the library is exports as **UMD module**.
 
 ```js
-// RequireJS and other-like
-require(['preparejs'], ({ preresolve }) => { 
-    preresolve('https://cdn-domain.com');
+const gamble = require('gamble');
+
+// dns-prefetch
+gamble({
+    rel: 'dns-prefetch',
+    href: 'https://domain.com'
 });
-// CommonJS and other-like
-const { preresolve } = require('preparejs');
-preresolve('https://cdn-domain.com');
-```
-```html
-<!-- Browser /-->
-<script type="application/javascript" src="prepare.min.js"></script>
-<script type="application/javascript">
-    const { preresolve } = preparejs;
-    preresolve('https://cdn-domain.com');
-</script>
-```
-
-### Examples
-```js
-// prefetch DNS of one or many hosts
-prepare('dns-prefetch', 'https://domain.com');
-prepare('dns-prefetch', ['https://domain1.com', 'https://domain2.com']);
-// or using alias
-preresolve('https://domain.com');
-
-// preconnect to hosts
-prepare('preconnect', ['https://domain1.com', 'https://domain2.com']);
-// or using a alias
-preconnect(['https://domain1.com', 'https://domain2.com']);
-
-// prefetch resource from other domain
-prepare('prefetch', 'https://other-domain.com/script.js', { as: 'script', crossorigin: 'anonymous' });
-// or using a alias
-prefetch('https://other-domain.com/script.js', { as: 'script', crossorigin: 'anonymous' });
-
-// preload resource as font for a specific media
-prepare('preload', 'https://domain.com/font.ttf', { as: 'font', media: 'screen' });
-// or using a alias
-preload('https://domain.com/font.ttf', { as: 'font', media: 'screen' });
-
+// prefetch a script with CORS
+gamble({
+    rel: 'prefetch',
+    href: 'https://domain.com/script.js',
+    as: 'script',
+    crossorigin: 'use-credentials'
+});
+// preload a HTML page
+gamble({
+    rel: 'preload',
+    href: 'https://domain.com/index.html',
+    as: 'html'
+});
 // prerender a page
-prepare('prerender', 'https://domain.com');
-// or using a alias
-prerender('https://domain.com');
+gamble({
+    rel: 'prerender',
+    href: 'https://domain.com/index.html'
+});
 ```
-
-### License
-[MIT](https://mit-license.org/)
-
-### Author
-Kuznetsov Aleksey, [Email](mailto:kyznecov.alexey@gmail.com)
